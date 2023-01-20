@@ -1,38 +1,96 @@
-.App {
+.container {
+  width: 525px;
+  height: 500px;
+  display: flex;
+  border: 2px solid black;
+  margin: 40px auto;
+}
+
+.homepage {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  border: 1px solid orange;
+}
+
+.employee-page {
+  width: 50%;
+  border: 1px solid red;
+}
+
+.homepage,
+.employee-page {
+  margin: 4px;
+  padding: 5px;
+}
+
+.header {
+  height: 8%;
+  border: 1px solid blue;
+  margin-bottom: 5px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h1 {
+  font-size: 0.9em;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+h2 {
+  font-size: 0.8em;
+  margin: 0;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+p {
+  font-size: 0.5em;
+  margin: 0;
+}
+
+.searchbar {
+  height: 8%;
+  margin-bottom: 5px;
+  border: 1px solid green;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+}
+.searchbar input {
+  width: 98%;
+  height: 85%;
+  display: block;
+  box-sizing: border-box;
+  border: 1px solid rgb(172, 170, 170);
+  border-radius: 10px;
+  padding: 5px;
 }
 
-.App-link {
-  color: #61dafb;
+.employee-list {
+  height: 84%;
+  padding: 5px;
+  border: 1px solid purple;
+  overflow: hidden;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.employee-list-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 15%;
+  border: 1px solid purple;
+  margin-bottom: 5px;
 }
+
+.employee-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  width: 40px;
+  border: 1px solid red;
+}
+
+/* .header,
+.searchbar,
+.employee-list {
+  margin: 5px;
+} */
